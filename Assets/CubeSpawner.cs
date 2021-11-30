@@ -15,7 +15,7 @@ public class CubeSpawner : MonoBehaviour {
 
     private void Start()
     {
-        _filePath = Directory.GetCurrentDirectory() + "/Assets/SaveFile.json";
+        _filePath = Path.Combine(Application.streamingAssetsPath,"SaveFile.json");//Directory.GetCurrentDirectory() + "/Assets/SaveFile.json";
         Debug.Log(_filePath);
     }
 
